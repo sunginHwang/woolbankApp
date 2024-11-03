@@ -8,11 +8,7 @@ import jestPlugin from 'eslint-plugin-jest';
 
 export default [
   {
-    ignores: [
-      'node_modules/',
-      'build/',
-      'dist/',
-    ],
+    ignores: ['node_modules/', 'build/', 'dist/'],
   },
   {
     files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
@@ -23,26 +19,26 @@ export default [
       },
     },
     plugins: {
-      react: eslintReactRecommended,
-       'react-hooks': eslintReactHooksRecommended,
-       jest: jestPlugin,
-       '@typescript-eslint': typescriptEslintRecommended,
+      'react': eslintReactRecommended,
+      'react-hooks': eslintReactHooksRecommended,
+      'jest': jestPlugin,
+      '@typescript-eslint': typescriptEslintRecommended,
     },
     rules: {
-       ...eslintRecommended.rules,
-       ...reactNativeEslintConfig.rules,
-       ...eslintReactRecommended.rules,
-       ...eslintReactHooksRecommended.rules,
-       ...typescriptEslintRecommended.rules,
-       ...typescriptEslintRules.rules,
+      ...eslintRecommended.rules,
+      ...reactNativeEslintConfig.rules,
+      ...eslintReactRecommended.rules,
+      ...eslintReactHooksRecommended.rules,
+      ...typescriptEslintRecommended.rules,
+      ...typescriptEslintRules.rules,
       'no-unused-vars': 'warn',
       'no-extra-semi': 'warn',
       'no-undef': 'error',
     },
     environment: {
       'jest/globals': true,
-      browser: true,
-      es2021: true,
+      'browser': true,
+      'es2021': true,
     },
   },
 ];

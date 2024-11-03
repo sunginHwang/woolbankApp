@@ -1,18 +1,14 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, Dimensions } from 'react-native';
+import { SafeAreaView, StyleSheet, Dimensions } from 'react-native';
 import WebView from 'react-native-webview';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
 const Webview = () => {
-
   return (
     <SafeAreaView style={styles.container}>
-      <WebView
-        style={styles.webview}
-        source={{uri: 'https://bank.woolta.com'}}
-      />
+      <WebView style={styles.webview} source={{ uri: 'https://bank.woolta.com' }} />
     </SafeAreaView>
   );
 };
@@ -31,6 +27,6 @@ const styles = StyleSheet.create({
     height: windowHeight,
   },
   text: {
-    color:'white',
+    color: 'white',
   },
 });

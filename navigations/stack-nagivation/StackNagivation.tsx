@@ -5,19 +5,17 @@ import { WebViewScreen } from 'screens/webview-screen/WebViewScreen';
 const Stack = createNativeStackNavigator();
 
 export const StackNavigation = () => {
-
   return (
-    <Stack.Navigator 
-      screenOptions = {() => ({ headerShown: false })}
-      initialRouteName='MainTab'
-    >
+    <Stack.Navigator screenOptions={() => ({ headerShown: false })} initialRouteName="MainTab">
       <Stack.Screen name="MainTab" component={MainTabNavigation} />
-      <Stack.Screen name="WebView" component={WebViewScreen} 
-        options={({ route }) => ({ 
-        headerShown: true, 
-        title: (route.params as any).title || 'Default Title' 
-        })} 
-        />
+      <Stack.Screen
+        name="WebView"
+        component={WebViewScreen}
+        options={({ route }) => ({
+          headerShown: true,
+          title: (route.params as any).title || 'Default Title',
+        })}
+      />
     </Stack.Navigator>
   );
-}
+};

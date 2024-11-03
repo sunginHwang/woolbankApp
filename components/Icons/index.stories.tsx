@@ -40,7 +40,7 @@ export const 아이콘_정보: Story = {
             <SC.Thumbnail>
               <Icon />
             </SC.Thumbnail>
-            <Text variant='body2' color='gray700'>
+            <Text variant="body2" color="gray700">
               {Icon.name}
             </Text>
           </SC.IconCard>
