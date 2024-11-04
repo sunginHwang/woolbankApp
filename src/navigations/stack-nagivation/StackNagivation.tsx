@@ -1,6 +1,6 @@
+import { MainTabNavigation } from '@navigations/main-tab-navigation/MainTabNatigation';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { MainTabNavigation } from 'navigations/main-tab-navigation/MainTabNatigation';
-import { WebViewScreen } from 'screens/webview-screen/WebViewScreen';
+import { WebViewScreen } from '@screens/webview-screen/WebViewScreen';
 
 const Stack = createNativeStackNavigator();
 

@@ -1,9 +1,9 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { DetailsScreen } from '../../screens/detail-screen/DetailScreen';
-import { IconPigOutline } from 'components/Icons/IconPigOutline';
-import { IconWalletOutline } from 'components/Icons/WalletOutline';
-import { IconAccountOutline } from 'components/Icons/IconAccountOutline';
-import { IconBucketOutline } from 'components/Icons/IconBucketOutline';
+import { DetailsScreen } from '@screens/detail-screen/DetailScreen';
+import { IconPigOutline } from '@components/Icons/IconPigOutline';
+import { IconWalletOutline } from '@components/Icons/WalletOutline';
+import { IconAccountOutline } from '@components/Icons/IconAccountOutline';
+import { IconBucketOutline } from '@components/Icons/IconBucketOutline';
 
 const SCREEN_OPTIONS = {
   tabBarActiveTintColor: '#f03e3e',
