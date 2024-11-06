@@ -4,6 +4,7 @@ import { IconPigOutline } from '@components/Icons/IconPigOutline';
 import { IconWalletOutline } from '@components/Icons/WalletOutline';
 import { IconAccountOutline } from '@components/Icons/IconAccountOutline';
 import { IconBucketOutline } from '@components/Icons/IconBucketOutline';
+import Webview from '@components/webview/WebView';
 
 const SCREEN_OPTIONS = {
   tabBarActiveTintColor: '#f03e3e',
@@ -27,7 +28,7 @@ export const MainTabNavigation = () => {
       />
       <Tab.Screen
         name="정기지출"
-        component={DetailsScreen}
+        component={Webview}
         options={{ tabBarIcon: ({ color }) => <IconWalletOutline fill={color} /> }}
       />
       <Tab.Screen
