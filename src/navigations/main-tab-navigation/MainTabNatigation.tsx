@@ -7,6 +7,7 @@ import { IconBucketOutline } from '@components/Icons/IconBucketOutline';
 import Webview from '@components/webview/WebView';
 
 const SCREEN_OPTIONS = {
+  headerShown: false,
   tabBarActiveTintColor: '#f03e3e',
   tabBarInactiveTintColor: '#E1E1E1',
   tabBarLabelStyle: {
@@ -20,7 +21,7 @@ const Tab = createBottomTabNavigator();
 
 export const MainTabNavigation = () => {
   return (
-    <Tab.Navigator screenOptions={SCREEN_OPTIONS}>
+    <Tab.Navigator  screenOptions={SCREEN_OPTIONS}>
       <Tab.Screen
         name="가계부"
         component={DetailsScreen}
