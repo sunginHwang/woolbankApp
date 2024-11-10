@@ -20,6 +20,16 @@ export const DetailsScreen: FC<Props> = ({ navigation }) => {
       >
         <Text>가계부홈 Screen</Text>
       </Text>
+      <Text
+        onPress={() => {
+          navigation.push('simpleBrowser', {
+            title: '신규웹뷰1',
+            link: 'https://m.avalon.co.kr/check.html',
+          });
+        }}
+      >
+        <Text>simple_brouser Screen</Text>
+      </Text>
     </View>
   );
 };
