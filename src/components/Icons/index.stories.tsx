@@ -4,7 +4,7 @@ import { Text } from '@wds';
 import AccountOutline from './IconAccountOutline';
 import BucketOutline from './IconBucketOutline';
 import ChevronDown from './ChevronDown';
-import ChevronLeft from './ChevronLeft';
+import ChevronLeft from './IconChevronLeft';
 import Close from './Close';
 import CloseCircle from './CloseCircle';
 import HomeOutline from './HomeOutline';
