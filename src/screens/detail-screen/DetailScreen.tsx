@@ -1,3 +1,4 @@
+import { BaseText } from '@components/base-text/BaseText';
 import { FC } from 'react';
 import { Text, View } from 'react-native';
 
@@ -11,6 +12,7 @@ type Props = any;
 export const DetailsScreen: FC<Props> = ({ navigation }) => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <BaseText kind='title1Bold' color='gray600' mb={20}>할로우</BaseText>
       <Text
         onPress={() => {
           navigation.push('WebView', {
